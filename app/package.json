@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Sergey Onufrienko",
+  "author": "Mohammad Mahmoud",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
