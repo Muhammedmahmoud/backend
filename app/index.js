@@ -1,6 +1,6 @@
 const app = require('express')();
 const { PORT = 4000, SALT = '#ha43-1', LOG_LEVEL, NODE_ENV } = process.env;
-const forecast = require('./utils/forecast')
+const forecast = require('../utils/forecast')
 const server = http.createServer(app);
 
 const io = require('socket.io')(server, {
@@ -23,7 +23,7 @@ io.on('connection', (socket) => {
     });
 })
 
-server.get('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Hello');
 });
 
